@@ -11,7 +11,7 @@ const errorMiddleware = require('./middlewares/error-middleware');
 
 
 const corsOptions = {
-    origin:"https://solveminds-sx7p.onrender.com",
+    origin:"https://solveminds.onrender.com",
     methods:"GET, PUT, POST, DELETE, PATCH, HEAD",
     credentials:true,
 };

@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { useAuth } from "../store/auth";
 import { Link } from "react-router-dom";
+import {toast} from "react-toastify";
 
 export const AdminUsers = () => {
     const [users, setUsers] = useState([]);
@@ -34,6 +35,7 @@ export const AdminUsers = () => {
         console.log(`users after delete :  ${data}`);
 
         if (response.ok) {
+            toast.success("Deleted successfully");
             getAllUsersData();
         }
     };

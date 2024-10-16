@@ -497,11 +497,6 @@ th, td {
   border-bottom: 1px solid var(--helper-color);
 }
 
-tr:hover {
-  background-color: var(--helper-color);
-  transition: background-color 0.3s ease;
-}
-
 td:last-child, td:nth-last-child(2) {
   text-align: center;
 }

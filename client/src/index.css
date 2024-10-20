@@ -64,6 +64,8 @@ li {
   font-size: 1.7rem;
 }
 
+/*Home Page*/
+
 .container {
   max-width: 140rem;
   padding: 4rem 2.4rem;
@@ -152,49 +154,51 @@ a.active {
 }
 
 .section-contact {
-  & .contact-content {
+  .contact-content {
     padding: 0;
 
-    & h1 {
+     h1 {
       margin-bottom: 3.2rem;
     }
   }
 
-  & .container {
+   .container {
     padding-top: 3.2rem;
   }
 
-  & .contact-img {
+   .contact-img {
     display: flex;
     justify-content: start;
     align-items: center;
 
-    & img {
+     img {
       width: 80%;
       height: auto;
     }
   }
 
-  & .section-form {
-    & form {
+   .section-form {
+     form {
       display: flex;
       flex-direction: column;
       gap: 3.2rem;
     }
 
-    & label {
+     label {
       display: block;
       margin-bottom: 1.2rem;
       text-transform: capitalize;
     }
 
-    & input,
+     input,
     textarea {
       width: 80%;
       padding: 0.4rem 0.6rem;
     }
   }
 }
+
+/*Error Page */
 
 #error-page {
   display: flex;
@@ -277,37 +281,41 @@ a.active {
   color: #fff;
 }
 
+/*Registration Page */
+
 .section-registration {
   padding: 0 3.2rem;
 
-  & .container {
+   .container {
     /* background-color: #fff; */
     padding-top: 3.2rem;
     align-items: center;
 
-    & img {
+     img {
       width: 80%;
       height: auto;
     }
   }
 
-  & .registration-form {
-    & label {
+   .registration-form {
+     label {
       display: block;
       margin: 2.4rem 0 0.8rem 0;
       text-transform: capitalize;
     }
 
-    & input {
+     input {
       width: 80%;
       padding: 0.6rem 0.6rem;
     }
 
-    & button {
+     button {
       margin-top: 3.2rem;
     }
   }
 }
+
+/* Admin page */
 
 .adminNav ul {
   display: flex;
@@ -381,25 +389,25 @@ a.active {
 ** -------------------------  */
 
 .section-services {
-  & .container:first-child {
+   .container:first-child {
     padding: 0;
   }
 
-  & .grid-three-cols {
+   .grid-three-cols {
     grid-template-columns: repeat(3, 1fr);
     gap: 3.2rem;
   }
 
-  & .card {
+   .card {
     display: flex;
     flex-direction: column;
     gap: 3.2rem;
     border: 0.2rem solid var(--helper-color);
 
-    & .card-img {
+     .card-img {
       text-align: center;
 
-      & img {
+       img {
         width: 70%;
         height: auto;
         filter: drop-shadow(0 0 2rem 2rem #fff);
@@ -407,14 +415,14 @@ a.active {
       }
     }
 
-    & .card-details {
+     .card-details {
       padding: 2.4rem;
 
-      & .grid p {
+       .grid p {
         font-size: 1.4rem;
       }
 
-      & h2 {
+       h2 {
         font-size: 3.2rem;
         margin: 1.2rem 0 2.4rem 0;
       }
@@ -469,7 +477,7 @@ a.active {
   }
 }
 
-/* admin user page ka css */
+/* admin user page css */
 
 body {
   font-family: Arial, sans-serif;
@@ -533,6 +541,7 @@ tbody tr:nth-child(odd) {
 }
 
 /* Hover effects */
+
 .edit-btn:hover {
   background-color: var(--edit-hover-color);  /* Green on hover for Edit */
   color:white;
